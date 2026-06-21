@@ -1,0 +1,110 @@
+{
+  "info": {
+    "_postman_id": "a54ff2fd-2d08-424a-b180-bcc2e2cd5b04",
+    "name": "Synnepha Cost Anomaly API",
+    "description": "Postman collection for testing the Synnepha Cost Anomaly Detection and Forecasting FastAPI service.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "1878453"
+  },
+  "item": [
+    {
+      "name": "Health Check",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/health",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "health"
+          ]
+        },
+        "description": "Checks whether the API service is running."
+      },
+      "response": []
+    },
+    {
+      "name": "Get All Anomalies",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/anomalies",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "anomalies"
+          ]
+        },
+        "description": "Returns all detected candidate cost anomalies."
+      },
+      "response": []
+    },
+    {
+      "name": "Get Anomaly By Rank",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/anomalies/3",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "anomalies",
+            "3"
+          ]
+        },
+        "description": "Returns a single anomaly by anomaly rank. Change the rank in the URL, for example /anomalies/2 or /anomalies/3."
+      },
+      "response": []
+    },
+    {
+      "name": "Get Daily Cost Forecast",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/forecast",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "forecast"
+          ]
+        },
+        "description": "Returns the daily cost forecast output."
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:8000"
+    }
+  ]
+}

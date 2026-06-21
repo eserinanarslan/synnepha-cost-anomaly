@@ -1,0 +1,7 @@
+server:
+  host: 0.0.0.0
+  port: 8000
+
+files:
+  anomaly_file: "./synnepha_exercise_90d/results/question_1_candidate_cost_anomalies.csv"
+  forecast_file: "./synnepha_exercise_90d/results/question_2_daily_cost_forecast.csv"
